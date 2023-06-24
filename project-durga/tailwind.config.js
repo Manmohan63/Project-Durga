@@ -5,8 +5,21 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      
+    extend: {},
+    screens: {
+      'sm': { 'min': '1px', 'max': '767px' },
+      'md': { 'min': '768px', 'max': '991px' },
+      'lg': { 'min': '992px', 'max': '1239px' },
+      'xl': { 'min': '1240px' },
+    },
+    colors: {
+      'main': '#dbad69',
+      'dark__blue': '#060031',
+      'light__blue': '#7b9e57',
+      'gradient__light__blue': '#080042',
+      'bg_blue_phoenix': '#0b005d',
+      'light_theme_bg': '#dbad69',
+      'light_theme_ot': '#00479f',
     },
   },
   plugins: [],

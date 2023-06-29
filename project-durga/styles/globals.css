@@ -24,3 +24,13 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #ff5fbc;
 }
+.clip-circle {
+  clip-path: circle(100% at 50% -80%);
+}
+.custom-zoom {
+  transition: transform 0.3s ease;
+}
+
+.custom-zoom:hover {
+  transform: scale(1.2);
+}

@@ -5,7 +5,15 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+          '0 35px 35px rgba(0, 0, 0, 0.25)',
+          '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
+      }
+    },
     screens: {
       'sm': { 'min': '1px', 'max': '767px' },
       'md': { 'min': '768px', 'max': '991px' },
@@ -13,13 +21,8 @@ module.exports = {
       'xl': { 'min': '1240px' },
     },
     colors: {
-      'main': '#dbad69',
-      'dark__blue': '#060031',
-      'light__blue': '#7b9e57',
-      'gradient__light__blue': '#080042',
-      'bg_blue_phoenix': '#0b005d',
-      'light_theme_bg': '#dbad69',
-      'light_theme_ot': '#00479f',
+      'main': '#ea028b',
+      'light_main': '#ff5fbc',
     },
   },
   plugins: [],

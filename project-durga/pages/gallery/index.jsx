@@ -1,8 +1,11 @@
 import React from 'react'
+import Globe  from '../../components/Globe';
 
 const index = () => {
   return (
-    <div>index</div>
+    <div className='min-h-screen min-w-screen'>
+      <Globe />
+    </div>
   )
 }
 

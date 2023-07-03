@@ -7,6 +7,9 @@ import Image from 'next/image';
 const Navbar = () => {
     const router = useRouter();
     const [isOpen, setOpen] = useState(false);
+    useEffect(()=>{
+        setOpen(false);
+    },[router]);
     return (
         <div className='flex p-1 h-[86px] items-center justify-between fixed top-0 left-0 min-w-full bg-[#ffc6de] z-10'>
             <Link href='/'>
@@ -69,6 +72,21 @@ const Navbar = () => {
                     toggled={isOpen}
                     toggle={setOpen}
                 />
+                <div className='transition-all ease-in duration-5000'>
+                    <div className={'absolute min-w-[30vh] my-4 mx-2 bg-main min-h-[40vw] top-[100%] transition-all ease-in-out duration-500 rounded-lg flex flex-col ' + `${isOpen ? "right-[2%]" : "right-[-100%]"}`}>
+                        <Link href='/' className='py-2 px-4'>Home</Link>
+                        <Link href='/about_us' className='py-2 px-4'>About us</Link>
+                        <Link href='/resources' className='py-2 px-4'>Resources</Link>
+                        <Link href='/success_stories' className='py-2 px-4'>Success Stories</Link>
+                        <Link href='/blogs' className='py-2 px-4'>Blogs</Link>
+                        <Link href='/gallery' className='py-2 px-4'>Gallery</Link>
+                        <Link href='/community_forum' className='py-2 px-4'>Community Forum</Link>
+                        <Link href='/find_nearby_places' className='py-2 px-4'>Find nearby places</Link>
+                        <Link href='/join_us' className='py-2 px-4'>Join us</Link>
+                        <Link href='/donate_us' className='py-2 px-4'>Donate us</Link>
+                        <Link href='/contact_us' className='py-2 px-4'>Contact us</Link>
+                    </div>
+                </div>
             </div>
         </div>
     )
@@ -78,7 +96,7 @@ const Navbar = () => {
 function NavigationLink({ href, text }) {
     const router = useRouter();
     return (
-        <li className={'list-none transition-all ease-in-out duration-300 hover:bg-[#ea028b] p-2 rounded-md ' + `${router.pathname === href ?"bg-[#ff5fbc] text-[white]":""}`}><Link href={href}>{text}</Link></li>
+        <li className={'list-none transition-all ease-in-out duration-300 hover:bg-[#ea028b] p-2 rounded-md ' + `${router.pathname === href ? "bg-[#ff5fbc] text-[white]" : ""}`}><Link href={href}>{text}</Link></li>
     );
 }
 function NavigationDropdown({ text, arr }) {
@@ -91,21 +109,21 @@ function NavigationDropdown({ text, arr }) {
         });
     }
     return (
-        <div className='flex flex-col transition-all ease-in-out delay-100 duration-300' 
-                onMouseEnter={() => {
-                    setopen(true);
-                }}
-                onMouseLeave={() => {
-                    setopen(close);
-                }}
-                >
+        <div className='flex flex-col transition-all ease-in-out delay-100 duration-300'
+            onMouseEnter={() => {
+                setopen(true);
+            }}
+            onMouseLeave={() => {
+                setopen(close);
+            }}
+        >
             <li className={'list-none items-center flex p-2 rounded-md transition-all ease-in-out duration-300 hover:bg-[#ea028b] ' + `${ischildopen ? "bg-[#ff5fbc] text-[white]" : ""}`}>{text}</li>
             <div className={"absolute border-2 rounded-xl overflow-hidden mt-12 w-[11em] transition-all ease-in-out duration-300 " + `${isopen ? "opacity-1" : "opacity-0"}`}>
                 {arr.map((d, index) => (
-                    <div key={index} className=''> 
+                    <div key={index} className=''>
                         <Link href={d.link} className='p-2 block bg-[#ffc6de] hover:bg-[#ea028b]' onClick={() => {
-                    setopen(false);
-                }}>{d.name}</Link>
+                            setopen(false);
+                        }}>{d.name}</Link>
                     </div>
                 ))}
             </div>

@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,8 +22,10 @@ module.exports = {
       'xl': { 'min': '1240px' },
     },
     colors: {
+      ...colors,
       'main': '#ea028b',
       'light_main': '#ff5fbc',
+      'light_green': '#b6d31a',
     },
   },
   plugins: [],

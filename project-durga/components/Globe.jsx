@@ -8,7 +8,7 @@ const Globe = () => {
                 height={500}
                 width={500}
                 alt='globe'
-                className={'h-[200px] lg:h-[130px] md:h-[100px] sm:h-[70px] w-auto rounded-full bg-[white] p-4 xl:mx-12 lg:mx-12 md:mx-10 sm:mx-4'}
+                className={'h-[200px] lg:h-[130px] md:h-[100px] sm:h-[70px] w-auto rounded-full bg-[white] sm:p-2 p-4 xl:mx-12 lg:mx-12 md:mx-10 sm:mx-4'}
             />
         </div>
     )

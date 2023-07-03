@@ -1,8 +1,5 @@
 import React from 'react'
 import Link from "next/link";
-import { BsTelephone } from "react-icons/bs";
-import { IoLocationOutline } from "react-icons/io5";
-import { TfiEmail } from "react-icons/tfi";
 import Image from 'next/image';
 import Globe from '../../components/Globe';
 

@@ -20,7 +20,7 @@ const Contact = () => {
 
       <div className='flex flex-col justify-center items-center gap-2 min-w-screen py-20 text-center px-2'>
         <div className='text-3xl md:text-2xl sm:text-2xl font-medium'>Contribute to Aadhya</div>
-        <div className='text-xl md:text-lg sm:text-lg opacity-40 font-semibold'>There are many reasons why 56 companies and 155 individuals have chosen to contribute to Srujna.</div>
+        <div className='text-xl md:text-lg sm:text-lg opacity-40 font-semibold'>There are many reasons why 56 companies and 155 individuals have chosen to contribute to Aadya.</div>
       </div>
 
 
@@ -55,7 +55,7 @@ const Contact = () => {
               India Sustainability Leadership Awards Certificate of Merit 2018
             </div>
             <div className='text-md sm:text-sm opacity-40 font-semibold'>
-              Srujna was presented the with a Certificate of Merit for Contribution to Social Cause & Empowerment by ‘World CSR Day & World Sustainability'. The impact of Srujna's work being represented at a national platform and validated by World CSR Day.
+              Aadya was presented the with a Certificate of Merit for Contribution to Social Cause & Empowerment by ‘World CSR Day & World Sustainability'. The impact of Srujna's work being represented at a national platform and validated by World CSR Day.
             </div>
           </div>
           <div className='p-4 text-center xl:max-w-[25%] lg:max-w-[35%] md:max-w-[40%] sm:max-w-[100%] flex-none'>
@@ -87,7 +87,7 @@ const Contact = () => {
               Third party Audited Accounts
             </div>
             <div className='text-md sm:text-sm opacity-40 font-semibold'>
-              We value transparency and accountability. Every year account statements of Srujna are being audited by third party auditors and are published annually in the annual reports, which are available on public domains.
+              We value transparency and accountability. Every year account statements of Aadhya are being audited by third party auditors and are published annually in the annual reports, which are available on public domains.
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                 Our Supporters
               </div>
               <div className=' text-xl lg:text-lg md:text-md sm:text-sm font-medium leading-8 text-center'>
-                More than 56 companies and organizations have supported Srujna, financially and non-financially. We are grateful for their enthusiasm and commitment to the cause and the trust they have placed in us.
+                More than 56 companies and organizations have supported Aadhya, financially and non-financially. We are grateful for their enthusiasm and commitment to the cause and the trust they have placed in us.
               </div>
               <div className='text-xl rounded-lg border-[white] border-4 p-2 px-4 m-4 hover:bg-main '><Link href='/join_us'>Join us</Link></div>
             </div>

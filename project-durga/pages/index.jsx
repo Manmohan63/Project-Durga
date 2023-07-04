@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from "next/link";
 import Image from 'next/image';
 import Globe from './../components/Globe';
@@ -8,15 +8,74 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import CountUp from 'react-countup';
 
 const Home = () => {
+    const photos = [
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688475416/edc87bb26fdd66928341c682dcc6c24a_iaj7ml.jpg',
+            'text': '“Judge a country by the place it gives its women.” - Mahatma Gandhi '
+        },
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688475411/f989003b603eb9c8dfcf4dcf9d7576ca_zrq2if.jpg',
+            'text': 'I Know My Worth. I Embrace My Power. '
+        },
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688475308/f02231ed6ebcbb6c28b8453ce8a413bb_jkawwy.jpg',
+            'text': 'Promoting gender equality and empowering women! '
+        },
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688475210/9edb3e93c50d30ffa84b4e87aca7919b_pgnvrh.jpg',
+            'text': 'If she can learn, she can earn! '
+        },
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688427120/actress-madhuri-dixit-during-the-launch-of-power-337048_igfcab.jpg',
+            'text': '“You get in life what you have the courage to ask for.” - Oprah Winfrey '
+        },
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688426833/AFP_94L4YA_1618490389449_1618490417636_gas4xv.jpg',
+            'text': 'Enabling women to earn a respectable income! '
+        },
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688475459/d32546a738249455f361d5bf647ed996_ajbfgc.jpg',
+            'text': '"I raise up my voice—not so that I can shout, but so that those without a voice can be heard. … We cannot all succeed when half of us are held back." - Malala Yousafzai'
+        },
+        {
+            'link': 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688475284/1f3e64cbf92c61f295c9acc33ed3ec05_d9qaem.jpg',
+            'text': 'We define empowerment as letting this power out. '
+        }
+    ];
+    let sz = photos.length;
+    let link = 'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688427120/actress-madhuri-dixit-during-the-launch-of-power-337048_igfcab.jpg';
+
+    const [index, setIndex] = useState(0);
+    const [img_link, setimg_link] = useState('https://res.cloudinary.com/dk8ign4oc/image/upload/v1688475416/edc87bb26fdd66928341c682dcc6c24a_iaj7ml.jpg');
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((index) => {
+                if (index === sz - 1) {
+                    return 0;
+                } else {
+                    console.log(index);
+                    console.log(img_link);
+                    return index + 1;
+                }
+            });
+        }, 7000);
+        return () => clearInterval(interval);
+    }, []);
+    useEffect(() => {
+        setimg_link(photos[index].link);
+    }, [index]);
+
     return (
         <>
 
-            <div className="flex justify-around items-center bg-origin-border min-w-screen min-h-screen bg-center bg-cover bg-no-repeat bg-[url('https://images.livemint.com/img/2022/03/07/1600x900/LSpic_1646677330637_1646677340040.jpg')]" >
-                <div className='bg-[black] opacity-80 min-w-full min-h-screen flex justify-center items-center ' >
+            {/* Carousel */}
+            <div className={"flex justify-around items-center bg-origin-border min-w-screen min-h-screen bg-center bg-cover bg-no-repeat transition-all ease-in-out duration-500 "} 
+                style={{ backgroundImage: `url(${img_link})` }}
+            >
+                <div className='bg-[black] opacity-60 min-w-full min-h-screen flex justify-center items-center ' >
                     <div className="flex text-[white] p-8 lg:p-6 md:p-4 sm:p-2 justify-around items-center flex-col opacity-100 leading-5">
-                        <div className="text-6xl md:text-5xl sm:text-3xl m-4 font-bold ">Donate Us</div>
-                        <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg m-4 text-center font-bold">Help make a difference!</div>
-                        <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg rounded-2xl border-[white] border-4 p-2 px-4 m-4 hover:bg-main "><Link href='#'> Donate Now</Link></div>
+                        <div className="text-6xl md:text-5xl sm:text-2xl m-4 font-bold ">Welcome to AADHYA</div>
+                        <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg m-4 text-center font-bold">{photos[index].text}</div>
                     </div>
                 </div>
             </div>
@@ -24,20 +83,20 @@ const Home = () => {
             {/* Random Story */}
             <div className='flex justify-center items-center py-24 px-28 sm:p-2 bg-[#f7f7f7]'>
                 <div className='flex justify-around items-center min-w-screen min-h-full gap-10 md:flex-col sm:flex-col '>
-                <Image
+                    <Image
                         src={'https://res.cloudinary.com/dk8ign4oc/image/upload/v1688426833/AFP_94L4YA_1618490389449_1618490417636_gas4xv.jpg'}
-                    height={500}
-                    width={500}
-                    className={'h-[22vw] w-auto md:w-[70vw] md:h-auto sm:h-[200px] sm:w-auto '}
-                />
-                <div className='max-w-[35vw] min-h-full flex flex-col justify-around md:max-w-full sm:max-w-full md:text-center sm:text-center sm:text-sm sm:p-0'>
-                    <div className='text-black font-bold xl:text-4xl lg:text-2xl md:text-xl sm:text-xl mb-8'>
-                        We envision a India “where every woman and every girl, who wants to earn, gets the opportunities to do so.” 
+                        height={500}
+                        width={500}
+                        className={'h-[22vw] w-auto md:w-[70vw] md:h-auto sm:h-[200px] sm:w-auto '}
+                    />
+                    <div className='max-w-[35vw] min-h-full flex flex-col justify-around md:max-w-full sm:max-w-full md:text-center sm:text-center sm:text-sm sm:p-0'>
+                        <div className='text-black font-bold xl:text-4xl lg:text-2xl md:text-xl sm:text-xl mb-8'>
+                            We envision a India “where every woman and every girl, who wants to earn, gets the opportunities to do so.”
+                        </div>
+                        <div className='font-medium opacity-40 leading-5'>
+                            For the thousands of stifled women in low-income communities across the country, Srujna is the key to unlocking their power! Srujna touches their lives, by transforming the many groups that work with grassroots women – helping create powerful, enterprising women that produce and sell hand-made products. Together, they provide livelihood opportunities to these low-income women – empowering them to become role models and changemakers in their families and communities.
+                        </div>
                     </div>
-                    <div className='font-medium opacity-40 leading-5'>
-                    For the thousands of stifled women in low-income communities across the country, Srujna is the key to unlocking their power! Srujna touches their lives, by transforming the many groups that work with grassroots women – helping create powerful, enterprising women that produce and sell hand-made products. Together, they provide livelihood opportunities to these low-income women – empowering them to become role models and changemakers in their families and communities.
-                    </div>
-                </div>
                 </div>
             </div>
 
@@ -241,6 +300,7 @@ function Blog_component({ head, text, link }) {
                     src={link}
                     height={500}
                     width={700}
+                    alt={'img'}
                     className={'h-auto xl:w-[450px] sm:w-[250px] hover:-translate-y-5 hover:scale-105 transition-all ease-in-out duration-500 hover:shadow-2xl'}
                 />
                 <div className='text-left p-4'>

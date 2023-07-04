@@ -55,7 +55,7 @@ const Contact = () => {
               India Sustainability Leadership Awards Certificate of Merit 2018
             </div>
             <div className='text-md sm:text-sm opacity-40 font-semibold'>
-              Aadya was presented the with a Certificate of Merit for Contribution to Social Cause & Empowerment by ‘World CSR Day & World Sustainability'. The impact of Srujna's work being represented at a national platform and validated by World CSR Day.
+              Aadya was presented the with a Certificate of Merit for Contribution to Social Cause & Empowerment by ‘World CSR Day & World Sustainability'. The impact of Aadhya's work being represented at a national platform and validated by World CSR Day.
             </div>
           </div>
           <div className='p-4 text-center xl:max-w-[25%] lg:max-w-[35%] md:max-w-[40%] sm:max-w-[100%] flex-none'>

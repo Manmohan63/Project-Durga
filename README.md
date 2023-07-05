@@ -51,7 +51,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Clone the project in localhost
 ```bash
-git clone https://github.com/Manmohan63/Project-Phoenix.git
+git clone https://github.com/Manmohan63/Project-Durga.git
 ```
 Install all the npm packages. Go into the web folder and type the following command to install all npm packages
 

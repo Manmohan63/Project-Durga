@@ -10,15 +10,15 @@ const Index = () => {
     
     <div className="flex justify-around items-center bg-origin-border min-w-screen min-h-screen bg-center bg-cover bg-no-repeat bg-[url('https://res.cloudinary.com/ddtzbznea/image/upload/v1687695328/women_ilfvsz.jpg')]">
     <div className="flex flex-col h-screen w-screen justify-center items-center bg-gradient-to-r from-[#e1098356] to-[#e1098356] ">
-      <h2 className="text-[white] text-6xl font-semibold mb-4">About Us</h2>
-      <h4 className="text-[white] text-3xl mb-8">Helping create livelihood opportunities for<br />women across India, since 2011.</h4>
+      <h2 className="text-[white] text-6xl md:text-5xl sm:text-3xl font-semibold sm:font-bold mb-4">About Us</h2>
+      <h4 className="text-[white] text-3xl lg:text-2xl md:text-xl sm:text-lg sm:font-bold text-center m-4">Helping create livelihood opportunities for<br />women across India, since 2011.</h4>
       {/* <a href="" className="bg-[white] text-[black] py-2 px-4 rounded-full hover:bg-gray-200">Learn More</a> */}
     </div>
   </div>
   </div>
   <div className=''>
-  <div className=' flex flex-col  px-20 items-center'>
-    <div>
+  <div className=' flex flex-col px-8 items-center'>
+    <div className='text-center'>
   <h2 className='text-4xl pt-4'>About Us</h2><br/>
                 <p className='text-lg'>At Aadhya, we believe that every woman deserves to be heard, respected, and empowered. Our website 
                 serves as a platform for women from all walks of life to come together, share their stories, 
@@ -30,7 +30,7 @@ const Index = () => {
                 growth. Join us on this transformative journey and let's inspire, uplift, and empower each other. 
                 Together, we can create a world where every woman feels empowered to pursue her dreams and aspirations.</p>
   </div>
-  <div className='flex sm:flex-wrap  justify-around  pt-6'>
+  <div className='flex sm:flex-wrap text-center justify-around  pt-6'>
     <div>
       <h1 className='text-4xl'>Our Mission</h1><br/>
       <p className='text-lg '>To facilitate work for women by creating a network of ground partners
@@ -38,12 +38,12 @@ const Index = () => {
 
     </div>
     <div>
-      <h1 className='text-4xl'>Our Vision</h1><br/>
+      <h1 className='text-4xl sm:pt-4'>Our Vision</h1><br/>
       <p className='text-lg '>To be the largest not for profit platform enabling women impacted 
         by poverty to earn a respectable income across India.</p>
     </div>
     <div className=''>
-      <h1 className='text-4xl'>
+      <h1 className='text-4xl sm:pt-4'>
       Our Values
       </h1><br/>
       <ul className='text-lg'>
@@ -59,19 +59,19 @@ const Index = () => {
   </div>
   </div>
   <div className="bg-cover bg-no-repeat " style={{ backgroundImage: 'url("https://res.cloudinary.com/ddtzbznea/image/upload/v1687695328/women_ilfvsz.jpg")' }}>
-  <div className="Trustees pb-28 pl-8 pr-8 mt-24 bg-gradient-to-r from-[#000000d2] to-[#000000d2] text-[white]">
-      <h2 className="text-4xl font-light mb-4 pt-8">Trustees of Aadya</h2>
-      <p className="text-lg mb-8">
+  <div className="Trustees pb-28 text-center px-8 mt-24 bg-gradient-to-r from-[#000000d2] to-[#000000d2] text-[white]">
+      <h2 className="text-4xl font-light mb-4 pt-8 text-center">Trustees of Aadya</h2>
+      <p className="text-lg mb-8 text-center">
         We are a young team, passionate about helping others and creating a better world. Aadhya was started in
         2011.
       </p><br/>
-      <div className="trusteesInfoContener flex sm:flex-wrap gap-6 pl-6 pr-6">
+      <div className="trusteesInfoContener flex sm:flex-wrap gap-6  sm:text-center ">
         <div className="trusteesInfo">
           <img src="https://res.cloudinary.com/ddtzbznea/image/upload/v1685636266/cld-sample.jpg" alt="imgError" className="w-full h-40" />
           <h4 className="text-2xl font-bold mt-4">Lorem </h4><br/>
           <p>Co-founder and Trustee</p><br/>
           <hr className="my-4" />
-          <p>
+          <p className=''>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem, 
             quo reprehenderit, excepturi aperiam iure optio nihil non atque fuga alias.
              Iure eum eius sint mollitia impedit modi? Veniam, quae.
@@ -108,26 +108,26 @@ const Index = () => {
       </div>
     </div>
     </div>
-    <div className='pt-12'>
-      <h1 className='text-4xl ml-8 pb-6 '>MEDIA COVERAGE</h1>
-      <div className='flex flex-wrap justify-around gap-6'>
-        <div className=' overflow-hidden  w-1/4 h-40'>
-      <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1" alt="imgError" className="   custom-zoom" />
+    <div className='pt-12 text-center'>
+      <h1 className='text-4xl pb-6 '>MEDIA COVERAGE</h1>
+      <div className='flex flex-wrap px-6 sm:px-8 justify-around gap-6'>
+        <div className=' overflow-hidden h-40  '>
+      <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1" alt="imgError" className=" w-full   custom-zoom" />
       </div>
-      <div className=' overflow-hidden w-1/4 h-40'>
-       <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1"alt="imgError" className="   custom-zoom" />
+      <div className=' overflow-hidden  h-40'>
+       <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1"alt="imgError" className=" w-full  custom-zoom" />
       </div>
-      <div className=' overflow-hidden w-1/4 h-40'>
-       <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1"alt="imgError" className="   custom-zoom" />
+      <div className=' overflow-hidden  h-40'>
+       <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1"alt="imgError" className=" w-full  custom-zoom" />
       </div>
-      <div className=' overflow-hidden w-1/4 h-40'>
-       <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1"alt="imgError" className="   custom-zoom" />
+      <div className=' overflow-hidden  h-40'>
+       <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1"alt="imgError" className=" w-full  custom-zoom" />
       </div>
-      <div className=' overflow-hidden w-1/4 h-40'>
-      <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1" alt="imgError" className="   custom-zoom" />
+      <div className=' overflow-hidden h-40'>
+      <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1" alt="imgError" className=" w-full   custom-zoom" />
       </div>
-      <div className=' overflow-hidden w-1/4 h-40'>
-      <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1" alt="imgError" className="   custom-zoom" />
+      <div className=' overflow-hidden  h-40'>
+      <img src="https://th.bing.com/th/id/OIP.GikXjhpkDF_Ai7GWINy8JwHaFj?pid=ImgDet&rs=1" alt="imgError" className=" w-full  custom-zoom" />
       </div>
       
       </div>

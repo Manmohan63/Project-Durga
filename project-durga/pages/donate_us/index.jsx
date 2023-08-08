@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="flex text-[white] p-8 lg:p-6 md:p-4 sm:p-2 justify-around items-center flex-col opacity-100 leading-5">
             <div className="text-6xl md:text-5xl sm:text-3xl m-4 font-bold ">Donate Us</div>
             <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg m-4 text-center font-bold">Help make a difference!</div>
-            <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg rounded-2xl border-[white] border-4 p-2 px-4 m-4 hover:bg-main "><Link href='#'> Donate Now</Link></div>
+            <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg rounded-2xl border-[white] border-4 p-2 px-4 m-4 hover:bg-main "><Link href='https://buy.stripe.com/test_aEU4hH56Ccxb9VeaEE' target={'_blank'}> Donate Now</Link></div>
           </div>
         </div>
       </div>

@@ -94,7 +94,7 @@ const Home = () => {
                             We envision a India “where every woman and every girl, who wants to earn, gets the opportunities to do so.”
                         </div>
                         <div className='font-medium opacity-40 leading-5'>
-                            For the thousands of stifled women in low-income communities across the country, Srujna is the key to unlocking their power! Srujna touches their lives, by transforming the many groups that work with grassroots women – helping create powerful, enterprising women that produce and sell hand-made products. Together, they provide livelihood opportunities to these low-income women – empowering them to become role models and changemakers in their families and communities.
+                            For the thousands of stifled women in low-income communities across the country, Aadhya is the key to unlocking their power! Aadhya touches their lives, by transforming the many groups that work with grassroots women – helping create powerful, enterprising women that produce and sell hand-made products. Together, they provide livelihood opportunities to these low-income women – empowering them to become role models and changemakers in their families and communities.
                         </div>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ const Home = () => {
             {/* 4 pillars */}
             <div className='flex flex-col justify-center items-center gap-2 min-w-screen py-20 text-center px-2'>
                 <div className='text-3xl md:text-2xl sm:text-2xl font-medium'>Contribute to Aadhya</div>
-                <div className='text-xl md:text-lg sm:text-lg opacity-40 font-semibold'>There are many reasons why 56 companies and 155 individuals have chosen to contribute to Srujna.</div>
+                <div className='text-xl md:text-lg sm:text-lg opacity-40 font-semibold'>There are many reasons why 56 companies and 155 individuals have chosen to contribute to Aadhya.</div>
             </div>
             <div className='flex justify-center items-center max-w-[100%]'>
                 <div className='flex justify-center xl:leading-8 lg:leading-6 flex-wrap'>
@@ -168,7 +168,7 @@ const Home = () => {
                             India Sustainability Leadership Awards Certificate of Merit 2018
                         </div>
                         <div className='text-md sm:text-sm opacity-40 font-semibold'>
-                            Srujna was presented the with a Certificate of Merit for Contribution to Social Cause & Empowerment by ‘World CSR Day & World Sustainability'. The impact of Srujna's work being represented at a national platform and validated by World CSR Day.
+                            Aadhya was presented the with a Certificate of Merit for Contribution to Social Cause & Empowerment by ‘World CSR Day & World Sustainability'. The impact of Aadhya's work being represented at a national platform and validated by World CSR Day.
                         </div>
                     </div>
                     <div className='p-4 text-center xl:max-w-[25%] lg:max-w-[35%] md:max-w-[40%] sm:max-w-[100%] flex-none'>
@@ -200,7 +200,7 @@ const Home = () => {
                             Third party Audited Accounts
                         </div>
                         <div className='text-md sm:text-sm opacity-40 font-semibold'>
-                            We value transparency and accountability. Every year account statements of Srujna are being audited by third party auditors and are published annually in the annual reports, which are available on public domains.
+                            We value transparency and accountability. Every year account statements of Aadhya are being audited by third party auditors and are published annually in the annual reports, which are available on public domains.
                         </div>
                     </div>
                 </div>
@@ -251,7 +251,7 @@ const Home = () => {
                                 Our Supporters
                             </div>
                             <div className=' text-xl lg:text-lg md:text-md sm:text-sm font-medium leading-8 text-center'>
-                                More than 56 companies and organizations have supported Srujna, financially and non-financially. We are grateful for their enthusiasm and commitment to the cause and the trust they have placed in us.
+                                More than 56 companies and organizations have supported Aadhya, financially and non-financially. We are grateful for their enthusiasm and commitment to the cause and the trust they have placed in us.
                             </div>
                             <div className='text-xl rounded-lg border-[white] border-4 p-2 px-4 m-4 hover:bg-main '><Link href='/join_us'>Join us</Link></div>
                         </div>

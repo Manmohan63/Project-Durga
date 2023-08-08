@@ -53,7 +53,7 @@ const Index = () => {
                 Our Supporters
               </div>
               <div className=' text-xl lg:text-lg md:text-md sm:text-sm font-medium leading-8 text-center'>
-                More than 56 companies and organizations have supported Srujna, financially and non-financially. We are grateful for their enthusiasm and commitment to the cause and the trust they have placed in us.
+                More than 56 companies and organizations have supported Aadhya, financially and non-financially. We are grateful for their enthusiasm and commitment to the cause and the trust they have placed in us.
               </div>
             </div>
 

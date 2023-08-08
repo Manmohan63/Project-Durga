@@ -11,7 +11,7 @@ const Contact = () => {
         <div className='bg-[black] opacity-80 min-w-full min-h-screen flex justify-center items-center ' >
           <div className="flex text-[white] p-8 lg:p-6 md:p-4 sm:p-2 justify-around items-center flex-col opacity-100 leading-5">
             <div className="text-6xl md:text-5xl sm:text-3xl m-4 font-bold">Contact Us</div>
-            <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg m-4 text-center font-bold">Supporting lesser Privileged Since 2011</div>
+            <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg m-4 text-center font-bold">Supporting lesser Privileged Since 2023</div>
             <div className="text-3xl lg:text-2xl md:text-xl sm:text-lg rounded-2xl border-[white] border-4 p-2 px-4 m-4 hover:bg-main hover:opacity-100"><Link href='/donate_us'> Donate Now</Link></div>
           </div>
         </div>
